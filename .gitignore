@@ -1,0 +1,53 @@
+# Compiled Object files, Static and Dynamic libs (Shared Objects)
+*.o
+*.a
+*.so
+
+# Executables
+*.exe
+*.out
+
+# Go binary
+/bin/
+
+# Go test binary
+/*.test
+
+# Go build cache
+/.cache/
+
+# Go coverage profile
+*.coverprofile
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Logs
+**.log
+
+# OS generated files
+**/.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE specific files
+.idea/
+.vscode/
+
+# Go coverage profile
+*.coverprofile
+
+# Go build cache
+/.cache/
+
+# Vendor directory
+/vendor/
+
+# Go binary
+/bin/
+
+# Environment variables
+.env
