@@ -31,7 +31,6 @@ func InitDB() *sql.DB {
 			log.Printf("failed to connect to database: %v", err)
 			return nil
 		}
-		defer instance.Close()
 
 		if err = instance.Ping(); err != nil {
 			log.Printf("failed to ping database: %v\n", err)

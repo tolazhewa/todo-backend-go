@@ -23,7 +23,11 @@ func main() {
 	if err != nil {
 		log.Fatal("error loading .env file")
 	}
+
 	config.InitAppConfig()
-	db.InitDB()
+
+	dbInstance := db.InitDB()
+	defer dbInstance.Close()
+
 	api.Run()
 }
